@@ -1,0 +1,20 @@
+name: Build MCPACK
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create MCPACK archive
+        run: |
+          zip -r MinecraftWaterPack.mcpack textures/ manifest.json README.md
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Minecraft-Water-Pack
+          path: MinecraftWaterPack.mcpack
