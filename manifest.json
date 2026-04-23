@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Animated Water Pack",
+    "description": "Water with smooth animated waves (64x64)",
+    "uuid": "f8e7d6c5-b4a3-4210-9876-543210fedcba",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "a1b2c3d4-e5f6-4789-a0b1-c2d3e4f5a6b7",
+      "version": [1, 0, 0]
+    }
+  ]
+}
